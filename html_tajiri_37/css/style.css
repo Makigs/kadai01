@@ -1,0 +1,425 @@
+/* ここから下に記載していく */
+/* 共通設定 */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 1200px;
+    margin: auto;
+    font-size: 16px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* ここからヘッダー */
+.header{
+    display: flex;
+    width:100%;
+    height: 100px;
+    align-items: center;
+}
+
+.title{
+    margin-right: auto;
+}
+
+.navititle{
+    display: inline;
+    padding: 50px 25px;
+    font-size: 21px;
+}
+
+.btn{
+    width: 90px;
+    height: 20px;
+    text-align: center;
+    padding: 10px 10px;
+    margin-left: 25px;
+    background-color: #ffd61a;
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.login-modal-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+}
+
+.modal {
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    background-color: #fafafa;
+    padding: 20px 0 40px;
+    border-radius: 10px;
+    width: 450px;
+    height: auto;
+    text-align: center;
+}
+
+.fa {
+    margin-right: 5px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.fa-times {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: rgba(128, 128, 128, 0.46);
+    cursor: pointer;
+}
+
+#login-form {
+    width: 100%;
+}
+
+#login-form h2 {
+    color: #5f5d60;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+#login-form input {
+    width: 320px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    padding: 12px 12px;
+    border: 1px solid #d0d5d8;
+    border-radius: 5px;
+}
+
+#submit-btn {
+    display: inline-block;
+    padding: 14px 140px;
+    background-color: #ffd61a;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin: 30px auto;
+    cursor: pointer;
+}
+
+#submit-btn:hover{
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
+    transform: scale(0.9);
+}
+
+/* ここからメインビジュアル */
+.mainvisual{
+    position: relative;
+}
+
+.mainmessage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+}
+
+#mainmessage1{
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+#mainmessage2{
+    font-size: 25px;
+    padding-top: 15px;
+}
+
+/* ここからコンテンツ */
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.contenttitle-en{
+    color: #ffd61a;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.contenttitle-jp{
+    color: #222222;
+    font-size: 18px;
+    padding-bottom: 60px;
+}
+
+.contenttext{
+    padding-bottom: 40px;
+    line-height: 25px;
+}
+
+.contenttext_last{
+    padding-bottom: 80px;
+    line-height: 25px;
+}
+
+/* ここから写真 */
+.pic{
+    display: flex;
+    justify-content: center;
+}
+
+.pic_css{
+    width: 25%;
+    height: auto;
+}
+
+/* ここからCOURSE */
+.course{
+    display: grid;
+    /* grid-template-columns: 600px 600px; */
+    grid-template-columns: 50% 50%;
+}
+
+.coursepic{
+    height: auto;
+    width: 100%;
+}
+
+.courseitemwrap{
+    display: flex;
+    background-color: #fafafa;
+    align-items: center;
+}
+
+.courseitemwrap_left{
+    display: flex;
+    background-color: #fafafa;
+    align-items: center;
+    justify-content: flex-end;
+}
+.courseitem{
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: left;
+}
+
+.course-subtitle{
+    padding-bottom: 40px;
+    font-weight: bold;
+}
+
+.course-content{
+    line-height: 30px;
+}
+
+/* ここからNEWS */
+.news-3wrap{
+    display: flex;
+    justify-content: center;
+}
+
+.news-1wrap{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 60px;
+}
+
+.news-1wrap:hover{
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
+    transform: scale(0.9);
+}
+
+.news-date{
+    padding-top: 30px;
+    padding-bottom: 24px;
+}
+
+.news-article{
+    line-height: 25px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    background-color: #ffd61a;
+    color: white;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.button:hover{
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
+    transform: scale(0.9);
+    background-color: orange;
+}
+
+/* ここからAccess */
+
+.access-background{
+    background-color: #fafafa;
+}
+
+.table-access{
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+/* ここからFAQ */
+.faq-wrapper{
+    background-color: #fafafa;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.faq{
+    width: 500px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.faq-list{
+    margin:20px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    cursor: pointer;
+    text-align: left;
+}
+
+.faq-list span{
+    position: absolute;
+    top:0;
+    right: 5px;
+    color: #ccc;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.faq-question{
+    padding-bottom: 5px;
+}
+
+.faq-answer{
+    padding: 15px 0px;
+    margin-bottom: 5px;
+    display: none;
+    font-size: 13px;
+    color: #707070;
+}
+
+/* ここからCONTACTForm */
+.contact-modal-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+}
+
+.modal-contact {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    background-color: #fafafa;
+    padding: 20px 30px 20px 30px;
+    border-radius: 10px;
+    width: 600px;
+    height: auto;
+    text-align: center;
+}
+
+.contact-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-h2{
+    margin-bottom: 40px;
+    color: #5f5d60;
+    letter-spacing: 1px;
+}
+
+.contact-form-table{
+    border-collapse: collapse;
+    color: #5f5d60;
+}
+
+.contact-form-tr{
+    width: 120px;
+}
+
+.contact-form-td{
+    border-top: 1px solid #bfbfbf ;
+    border-bottom: 1px solid #bfbfbf ;
+    border-left: none;
+    border-right: none;
+    text-align: left;
+    padding: 8px;
+}
+
+.contact-form-tr td:first-child{
+    border-right: 2px solid #bfbfbf;
+}
+
+.contact-message{
+    vertical-align: top;
+}
+
+#motiva{
+    padding: 12px 0px 12px 5px;
+}
+
+
+#page-top{
+    position:fixed;
+    right: 25px;
+    bottom: 25px;
+    border-radius: 50px;
+    background-color: #ffd61a;
+}
+
+/* ここからフッター */
+.footer{
+    background-color: #707070;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 80px;
+}
+
